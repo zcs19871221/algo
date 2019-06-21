@@ -1,0 +1,33 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-private-methods": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.2",
+    "chalk": "^2.4.2",
+    "core-js": "^3.1.4",
+    "cross-spawn": "^6.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-zcs": "^2.2.7",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.17.3",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "format": "node ./__better-code__/bin/prettier.js",
+    "js": "node ./__better-code__/bin/eslint.js",
+    "compile": "node ./__better-code__/bin/babel.js src -d dist --watch --ignore 'src/**/*.test.js'",
+    "test": "node ./__better-code__/bin/jest.js"
+  },
+  "author": "zcs",
+  "license": "MIT"
+}
