@@ -43,9 +43,9 @@ class Graph {
   }
 
   toString() {
-    console.log(`定点数:${this.v} 边数:${this.e}`);
-    for (let i = 0; i < this.v; i += 1) {
-      console.log(`${i}: ${this.adjs(i)}`);
+    console.log(`定点数:${this.#V} 边数:${this.#E}`);
+    for (let i = 0; i < this.#V; i += 1) {
+      console.log(`${i}: ${this.adj(i)}`);
     }
   }
 
